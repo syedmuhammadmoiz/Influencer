@@ -1,0 +1,141 @@
+.pricing_container {
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.pricing_card:hover {
+  transform: scale(1.05);
+}
+
+.flex {
+  display: flex;
+}
+
+.pricing_check {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.pricing_card {
+  max-width: 25rem;
+  max-height: 20rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 5rem 0 0 0;
+  border-radius: 20px;
+  overflow: hidden;
+  flex: 1 1 25rem;
+  transition: all 0.3s ease-in-out;
+}
+.pricing_cir {
+  width: 50rem;
+  height: 50rem;
+  position: relative;
+  top: -36.9rem;
+  left: -24rem;
+  border-radius: 50%;
+  background: linear-gradient(to left, #4fc5fe, #0749f0ce, #0749f041);
+}
+
+.pricing_text {
+  color: #3a4557;
+}
+
+.pricing_header h1 {
+  line-height: 7rem;
+  color: #3a4557;
+}
+
+.pricing_text p {
+  padding: 0 0 0 1.5rem;
+  font-size: 0.95rem;
+  line-height: 2rem;
+}
+
+.pricing_text img {
+  margin-top: 0.75rem;
+}
+
+.wheat {
+  position: relative;
+  width: 17rem;
+  height: 17rem;
+  top: 33rem;
+  left: 24rem;
+  z-index: 2;
+}
+
+.pricing_card_text {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  flex-direction: column;
+  left: 2rem;
+}
+
+.was {
+  font-size: 0.75rem;
+  color: #ffea00;
+  position: relative;
+  top: 2rem;
+}
+
+.card_life {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffea00;
+  position: relative;
+  top: 4rem;
+}
+
+.pricing_line {
+  width: 1.5rem;
+  height: 0.25rem;
+  background: #f2f5f7;
+  border-radius: 10px;
+  position: relative;
+  top: 6rem;
+}
+
+.now {
+  font-size: 1.25rem;
+  color: #f2f5f7;
+  position: relative;
+  top: 8rem;
+}
+
+.life {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #f2f5f7;
+  position: relative;
+  top: 10rem;
+}
+
+.buy {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: black;
+  position: relative;
+  top: 10rem;
+  left: 16rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .pricing_header h1 {
+    line-height: 7rem;
+    font-size: 1.5rem;
+    color: #3a4557;
+  }
+  .pricing_text p {
+    padding: 0 0 0 1.5rem;
+    font-size: 0.75rem;
+    line-height: 2rem;
+  }
+  .pricing_card {
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,113 @@
+.logo {
+  width: 10rem;
+  height: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.nav_bar {
+  display: flex;
+  color: #f8f9fedb;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 15vh;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0.85rem;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  letter-spacing: 1px;
+  width: 63%;
+}
+.nav_links p {
+  cursor: pointer;
+}
+
+.nav_logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.nav_sign {
+  display: flex;
+  align-items: center;
+}
+
+.sign_in {
+  padding: 0 2rem 0 3rem;
+}
+
+.nav_button {
+  background-color: white;
+  color: #50adfa;
+  box-shadow: 5px 5px 10px #00000032;
+  font-weight: bold;
+  border-radius: 50rem;
+  height: 3rem;
+  width: 9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.nav_button:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1100px) {
+  .logo {
+    width: 8rem;
+    height: 1.5rem;
+  }
+  .nav_links {
+    font-size: 0.65rem;
+  }
+  .nav_sign .nav_button {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+}
+.nav_burger {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .nav_links {
+    display: none;
+  }
+  .nav_burger {
+    display: flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .nav_list {
+    width: 1.25rem;
+    height: 1.25rem;
+    position: relative;
+    z-index: 2;
+  }
+  .nav_logo {
+    position: relative;
+    z-index: 5;
+  }
+  .nav_mobile_drop {
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    background-color: white;
+    top: -20rem;
+    left: 0;
+  }
+}

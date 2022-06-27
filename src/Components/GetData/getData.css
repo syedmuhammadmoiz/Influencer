@@ -1,0 +1,79 @@
+.get_container {
+  min-height: 120vh;
+  background: linear-gradient(to bottom, #ffffff 10%, #f8f9fc 90%);
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+}
+
+.get_cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+}
+.get_card_container span {
+  color: #2cd880;
+}
+.get_head {
+  color: #455164;
+  text-align: center;
+}
+.get_card_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  height: 15rem;
+  flex: 1 1 18rem;
+  color: #455164;
+}
+
+.get_card_container .get_img {
+  width: 2.35rem;
+  height: 2rem;
+}
+
+.get_card_head {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.get_card_para {
+  font-size: 0.8rem;
+}
+
+.get_card_para {
+  line-height: 1.25rem;
+}
+
+.get_card_link {
+  color: rgba(76, 76, 236, 0.822);
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  line-height: 5rem;
+  cursor: pointer;
+}
+.tri {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid rgba(76, 76, 236, 0.836);
+  border-bottom: 5px solid transparent;
+  margin: 0 0 0 0.5rem;
+}
+
+@media screen and (max-width: 1260px) {
+  .get_head {
+    margin: 15rem 0 4rem 0;
+  }
+  .get_head {
+    font-size: 0.75rem;
+  }
+}

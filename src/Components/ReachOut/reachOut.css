@@ -1,0 +1,87 @@
+.reach_container {
+  display: flex;
+  min-height: 110vh;
+  width: 85%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card_container {
+  width: 15rem;
+  height: 28rem;
+  object-fit: cover;
+  flex: 0 0 20rem;
+  margin: 0 1rem 0 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.card_container:hover {
+  transform: scale(1.1);
+}
+
+.reach_card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20rem 0 0 0;
+  justify-content: space-around;
+}
+
+.card_bg_img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 5px 2px 25px 20px #f2f5f7;
+  border-radius: 25px;
+}
+
+.reach_text {
+  text-align: center;
+  color: #3a4557;
+  margin: -8rem 0 0 0;
+}
+
+.card_img {
+  position: relative;
+  width: 10.75rem;
+  height: 11rem;
+  z-index: 2;
+  left: 4.75rem;
+  top: 14.25rem;
+}
+
+.card_container .card_p,
+.card_head {
+  position: relative;
+  left: 2rem;
+  top: -11rem;
+  color: #3a4557;
+  line-height: 2rem;
+}
+
+.card_container .card_p {
+  font-size: 0.9rem;
+}
+
+.card_container .card_head {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+@media screen and (max-width: 1260px) {
+  .reach_text {
+    margin: 5rem 0 0 0;
+  }
+  .reach_card {
+    margin: -7rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .reach_text h1 {
+    font-size: 1.5rem;
+  }
+}

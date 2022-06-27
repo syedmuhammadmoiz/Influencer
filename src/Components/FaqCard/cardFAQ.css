@@ -1,0 +1,39 @@
+.faq {
+  background: url(../../assets/images/FAQ.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  width: 85%;
+  height: 60%;
+}
+.faq-container > h1 {
+  margin-bottom: 1.75rem;
+}
+
+.faq-container h1 {
+  color: #3a4557;
+}
+
+.footer_mar {
+  padding: 0 0 0 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .faq-container h1 {
+    font-size: 1.5rem;
+  }
+}
