@@ -7,9 +7,9 @@ import gmg2 from "../../assets/images/gmg2.png";
 import gmg3 from "../../assets/images/gmg3.png";
 import "./reachOut.css";
 
-const ReachCard = ({ bg, img, head, para }) => {
+const ReachCard = ({ bg, img, head, para, isClass }) => {
   return (
-    <div className="card_container">
+    <div className={"card_container"}>
       <img className="card_img" src={img} alt="" />
       <img className="card_bg_img" src={bg} alt="" />
 
@@ -30,9 +30,14 @@ const ReachOut = () => {
           bg={mg1}
           img={gmg1}
           head="Find Unlimited Influencers"
-          para="Deep search tech for more than 7 million influencers"
+          para={[
+            "Deep search tech for more than 7 million",
+            <br />,
+            " influencers",
+          ]}
         />
         <ReachCard
+          isClass={"margin"}
           bg={mg2}
           img={gmg2}
           head="Analyze Data Points"
@@ -43,6 +48,7 @@ const ReachOut = () => {
           ]}
         />
         <ReachCard
+          isClass="margin"
           bg={mg3}
           img={gmg3}
           head="Reach Out"

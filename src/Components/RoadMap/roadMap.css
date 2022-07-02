@@ -1,5 +1,5 @@
 .road_container {
-  height: 100vh;
+  min-height: 100vh;
   background: radial-gradient(#173fa5, #021f69);
 }
 
@@ -15,10 +15,45 @@
 }
 
 .road_circle {
+  position: relative;
   width: 1.2rem;
   height: 1.2rem;
 }
+.cir_1 {
+  position: relative;
+  left: 5rem;
+  top: 5rem;
+}
 
+.cir_2 {
+  position: relative;
+  left: 5rem;
+  top: -4rem;
+}
+
+.cir_3 {
+  position: relative;
+  left: 5rem;
+  top: 5.5rem;
+}
+
+.cir_4 {
+  position: relative;
+  left: 5rem;
+  top: -5rem;
+}
+
+.cir_5 {
+  position: relative;
+  left: 5rem;
+  top: 5rem;
+}
+
+.cir_6 {
+  position: relative;
+  left: 5rem;
+  top: -5rem;
+}
 .road_dots {
   display: flex;
   justify-content: space-evenly;
@@ -41,15 +76,15 @@
   top: 3rem;
 }
 
-.road_dots .road_circle {
+/* .road_dots .road_circle {
   margin-top: -0.5rem;
-}
+} */
 
-.road_lines {
+/* .road_lines {
   display: flex;
   justify-content: space-evenly;
   position: relative;
-}
+} */
 
 .line {
   position: relative;
@@ -57,55 +92,43 @@
 .line1 {
   width: 5rem;
   height: 8rem;
-  top: 4.5rem;
-  left: 7.35rem;
+  top: -4rem;
+  left: 5.5rem;
 }
 
 .line2 {
   width: 10.75rem;
   height: 10rem;
-  top: 3rem;
-  left: 10.35rem;
+  top: -5rem;
+  left: 5.5rem;
 }
 
 .line3 {
   width: 3.5rem;
   height: 10rem;
-  top: 2.5rem;
-  left: 7.5rem;
+  top: -5rem;
+  left: 5.5rem;
 }
 
 .line4 {
   width: 4.5rem;
   height: 10rem;
-  top: 3.5rem;
-  left: -6.75rem;
+  top: 5rem;
+  left: 1.15rem;
 }
 
 .line5 {
   width: 10rem;
   height: 11rem;
-  top: 3.55rem;
-  left: -6.9rem;
+  top: 5.5rem;
+  left: -4.35rem;
 }
 
 .line6 {
   width: 12rem;
   height: 10rem;
-  top: 3.55rem;
-  left: -9.12rem;
-}
-
-.road_card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: relative;
   top: 5rem;
-  left: 13rem;
-  color: white;
-  width: 13rem;
-  height: 0rem;
+  left: -6.35rem;
 }
 
 .road_card_head {
@@ -118,7 +141,7 @@
   font-size: 0.65rem;
   line-height: 2rem;
 }
-
+/* paragraphs */
 .road_card_para {
   font-weight: 200;
   font-size: 0.65rem;
@@ -130,12 +153,29 @@
   text-align: start;
 }
 
+/* paragraphs cards*/
+.road_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+
+  color: white;
+  width: 13rem;
+  height: 0rem;
+}
+.road_card_1 {
+  top: -3.5rem;
+  left: -4rem;
+}
 .road_card_2 {
-  left: 42rem;
+  left: 2.25rem;
+  top: -3rem;
 }
 
 .road_card_3 {
-  left: 58rem;
+  left: -5rem;
+  top: -2rem;
 }
 
 .road_card_l {
@@ -148,22 +188,359 @@
   height: 0rem;
 }
 .road_card_4 {
-  left: 7rem;
-  top: -4.5rem;
+  left: 2rem;
+  top: 9.57rem;
 }
 
 .road_card_5 {
-  left: 24.5rem;
-  top: -4.75rem;
+  left: -3.5rem;
+  top: 9.5rem;
 }
 
 .road_card_6 {
-  left: 46rem;
-  top: -5rem;
+  left: -5rem;
+  top: 8.75rem;
+}
+
+.road_1,
+.road_2,
+.road_3,
+.road_4,
+.road_5,
+.road_6 {
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+}
+
+.road_card_container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: 7rem;
+  background: linear-gradient(
+    to right,
+    #021f69,
+    #4fc5fe,
+    #4fc5fe,
+    #173fa5,
+    #405893,
+    #405893,
+    #405893,
+    #405893,
+    #405893,
+    #173fa5,
+    #021f69
+  );
+  height: 0.25rem;
+
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .road_1,
+  .road_2,
+  .road_3,
+  .road_4,
+  .road_5,
+  .road_6 {
+    width: 10rem;
+  }
+
+  .road_card_head {
+    font-size: 0.75rem;
+  }
+
+  .road_card_sub {
+    font-size: 0.5rem;
+  }
+  .road_card_para {
+    font-size: 0.5rem;
+  }
+  .road_card_paral {
+    font-size: 0.5rem;
+  }
+  .cir_1 {
+    top: 4.25rem;
+  }
+
+  .cir_2 {
+    top: -3.5rem;
+  }
+
+  .cir_3 {
+    top: 4.5rem;
+  }
+
+  .cir_4 {
+    top: -4rem;
+  }
+
+  .cir_5 {
+    top: 4rem;
+  }
+
+  .cir_6 {
+    top: -4rem;
+  }
+  .line1 {
+    width: 4rem;
+    height: 7rem;
+    top: -3.5rem;
+    left: 5.55rem;
+  }
+
+  .line2 {
+    width: 8.75rem;
+    height: 8rem;
+    top: -4rem;
+    left: 5.55rem;
+  }
+
+  .line3 {
+    width: 3rem;
+    height: 8rem;
+    top: -4rem;
+    left: 5.5rem;
+  }
+
+  .line4 {
+    width: 4rem;
+    height: 8.5rem;
+    top: 4.25rem;
+    left: 1.65rem;
+  }
+
+  .line5 {
+    width: 8rem;
+    height: 9rem;
+    top: 4.5rem;
+    left: -2.35rem;
+  }
+
+  .line6 {
+    width: 10rem;
+    height: 8rem;
+    top: 4rem;
+    left: -4.35rem;
+  }
+
+  .road_card_1 {
+    top: -3rem;
+    left: -4.75rem;
+  }
+  .road_card_2 {
+    left: 0.25rem;
+    top: -3rem;
+  }
+
+  .road_card_3 {
+    left: -5.25rem;
+    top: -3rem;
+  }
+
+  .road_card_4 {
+    left: 2.5rem;
+    top: 8.25rem;
+  }
+
+  .road_card_5 {
+    left: -1.5rem;
+    top: 8.25rem;
+  }
+
+  .road_card_6 {
+    left: -3rem;
+    top: 7.5rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
+  .road_head {
+    font-size: 0.75rem;
+    line-height: 2.5rem;
+  }
+
+  .road_sub {
+    font-size: 0.65rem;
+    line-height: 2.5rem;
+  }
+  .road_1,
+  .road_2,
+  .road_3,
+  .road_4,
+  .road_5,
+  .road_6 {
+    width: 7rem;
+  }
+
+  .road_card_head {
+    font-size: 0.6rem;
+  }
+
+  .road_card_sub {
+    font-size: 0.45rem;
+  }
+  .road_card_para {
+    font-size: 0.45rem;
+  }
+  .road_card_paral {
+    font-size: 0.45rem;
+  }
+
+  .road_circle {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .road_card_container {
+    height: 0.2rem;
+  }
+  .cir_1 {
+    top: 3.25rem;
+    left: 3rem;
+  }
+
+  .cir_2 {
+    top: -3rem;
+    left: 3rem;
+  }
+
+  .cir_3 {
+    top: 4rem;
+    left: 3rem;
+  }
+
+  .cir_4 {
+    top: -3.5rem;
+    left: 3rem;
+  }
+
+  .cir_5 {
+    top: 3.5rem;
+    left: 3rem;
+  }
+
+  .cir_6 {
+    top: -3.5rem;
+    left: 3rem;
+  }
+  .line1 {
+    width: 3rem;
+    height: 6rem;
+    top: -3rem;
+    left: 3.5rem;
+  }
+
+  .line2 {
+    width: 6.5rem;
+    height: 7rem;
+    top: -3.5rem;
+    left: 3.5rem;
+  }
+
+  .line3 {
+    width: 2.75rem;
+    height: 7rem;
+    top: -3.5rem;
+    left: 3.5rem;
+  }
+
+  .line4 {
+    width: 3.5rem;
+    height: 6.5rem;
+    top: 3.25rem;
+    left: 0rem;
+  }
+
+  .line5 {
+    width: 6rem;
+    height: 8rem;
+    top: 4rem;
+    left: -2.5rem;
+  }
+
+  .line6 {
+    width: 7.5rem;
+    height: 7rem;
+    top: 3.5rem;
+    left: -4rem;
+  }
+
+  .road_card_1 {
+    top: -3rem;
+    left: -7.5rem;
+  }
+  .road_card_2 {
+    left: -3.75rem;
+    top: -3rem;
+  }
+
+  .road_card_3 {
+    left: -7.5rem;
+    top: -3rem;
+  }
+
+  .road_card_4 {
+    left: 1rem;
+    top: 6.5rem;
+  }
+
+  .road_card_5 {
+    left: -1.5rem;
+    top: 7rem;
+  }
+
+  .road_card_6 {
+    left: -3rem;
+    top: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
   .road_container {
-    display: none;
+    min-height: 180vh;
+    background: radial-gradient(#173fa5, #021f69);
+  }
+  .road_card_container {
+    margin-top: 17rem;
+    transform: rotate(90deg);
+  }
+
+  .road_card_1 {
+    transform: rotate(-90deg);
+    left: -5rem;
+    top: -1rem;
+  }
+  .road_card_2 {
+    transform: rotate(-90deg);
+    left: -1rem;
+    top: -1rem;
+  }
+
+  .road_card_3 {
+    transform: rotate(-90deg);
+    left: -4.5rem;
+    top: -0.75rem;
+  }
+
+  .road_card_4 {
+    transform: rotate(-90deg);
+    left: -5.75rem;
+    top: 7.75rem;
+  }
+
+  .road_card_5 {
+    transform: rotate(-90deg);
+    left: -8rem;
+    top: 8.5rem;
+  }
+
+  .road_card_6 {
+    transform: rotate(-90deg);
+    left: -9rem;
+    top: 8rem;
   }
 }

@@ -32,83 +32,99 @@ const RoadMap = () => {
           feedback.
         </p>
       </div>
-      <RoadCard
-        className="road_card"
-        class_para="road_card_para"
-        head="YouTube Influencer Discovery"
-        sub="Q4 2019"
-        para={[
-          "You'll be able to find and connect with",
-          <br />,
-          "authentic influencer on Youtube",
-        ]}
-      />
-      <RoadCard
-        className="road_card road_card_2"
-        class_para="road_card_para"
-        head="Influencer's Contact Info"
-        sub="Q1 2020"
-        para={[
-          "Get contact info of influencers and reach",
-          <br />,
-          "out to them",
-        ]}
-      />
-      <RoadCard
-        className="road_card road_card_3"
-        class_para="road_card_para"
-        head="Integration with Other Tools"
-        sub="Ongoing"
-        para="Email and CRM integrations"
-      />
-      <div className="road_lines">
-        <img className="line1 line" src={line1} alt="" />
-        <img className="line2 line" src={line2} alt="" />
-        <img className="line3 line" src={line3} alt="" />
-      </div>
-      <div className="road_dots">
-        <img className="road_circle" src={Cir2} alt="" />
-        <img className="road_circle" src={Cir1} alt="" />
-        <img className="road_circle" src={Cir3} alt="" />
-        <img className="road_circle" src={Cir3} alt="" />
-        <img className="road_circle" src={Cir3} alt="" />
-        <img className="road_circle" src={Cir3} alt="" />
-      </div>
+      <div className="road_card_container">
+        <div className="road_1">
+          <RoadCard
+            className="road_card_l road_card_4"
+            class_para="road_card_paral"
+            head="Instagram Influencers"
+            sub="Q4 2019 - Done"
+            para={[
+              "You'll be able to find and connect with",
+              <br />,
+              "authentic influencers on Instagram",
+            ]}
+          />
+          <img className="road_circle cir_1" src={Cir2} alt="" />
+          <img className="line4 line" src={line4} alt="" />
+        </div>
+        <div className="road_2">
+          <RoadCard
+            className="road_card road_card_1"
+            class_para="road_card_para"
+            head="YouTube Influencer Discovery"
+            sub="Q4 2019"
+            para={[
+              "You'll be able to find and connect with",
+              <br />,
+              "authentic influencer on Youtube",
+            ]}
+          />
+          <img className="line1 line" src={line1} alt="" />
+          <img className="road_circle cir_2" src={Cir1} alt="" />
+        </div>
+        <div className="road_3">
+          <RoadCard
+            className="road_card_l road_card_5"
+            class_para="road_card_paral"
+            head="Data Export in CSV"
+            sub="Q4 2019"
+            para={["Create lists or reports and eport data", <br />, "via CSV"]}
+          />
+          <img className="road_circle cir_3" src={Cir3} alt="" />
+          <img className="line5 line" src={line5} alt="" />
+        </div>
 
-      <div className="road_lines">
-        <img className="line4 line" src={line4} alt="" />
-        <img className="line5 line" src={line5} alt="" />
-        <img className="line6 line" src={line6} alt="" />
+        <div className="road_4">
+          <RoadCard
+            className="road_card road_card_2"
+            class_para="road_card_para"
+            head="Influencer's Contact Info"
+            sub="Q1 2020"
+            para={[
+              "Get contact info of influencers and reach",
+              <br />,
+              "out to them",
+            ]}
+          />
+          <img className="line2 line" src={line2} alt="" />
+          <img className="road_circle cir_4" src={Cir3} alt="" />
+        </div>
+        <div className="road_5">
+          <RoadCard
+            className="road_card_l road_card_6"
+            class_para="road_card_paral"
+            head="Cost Estimation & CPM"
+            sub="Q2 2020"
+            para={[
+              "Our smart AI will suggest expected CPM",
+              <br />,
+              "rates for every influencer",
+            ]}
+          />
+          <img className="road_circle cir_5" src={Cir3} alt="" />
+          <img className="line6 line" src={line6} alt="" />
+        </div>
+        <div className="road_6">
+          <RoadCard
+            className="road_card road_card_3"
+            class_para="road_card_para"
+            head="Integration with Other Tools"
+            sub="Ongoing"
+            para="Email and CRM integrations"
+          />
+          <img className="line3 line" src={line3} alt="" />
+          <img className="road_circle cir_6" src={Cir3} alt="" />
+        </div>
       </div>
-      <RoadCard
-        className="road_card_l road_card_4"
-        class_para="road_card_paral"
-        head="Instagram Influencers"
-        sub="Q4 2019 - Done"
-        para={[
-          "You'll be able to find and connect with",
-          <br />,
-          "authentic influencers on Instagram",
-        ]}
-      />
-      <RoadCard
-        className="road_card_l road_card_5"
-        class_para="road_card_paral"
-        head="Data Export in CSV"
-        sub="Q4 2019"
-        para={["Create lists or reports and eport data", <br />, "via CSV"]}
-      />
-      <RoadCard
-        className="road_card_l road_card_6"
-        class_para="road_card_paral"
-        head="Cost Estimation & CPM"
-        sub="Q2 2020"
-        para={[
-          "Our smart AI will suggest expected CPM",
-          <br />,
-          "rates for every influencer",
-        ]}
-      />
+      {/* <div className="road_lines">
+      </div> */}
+
+      {/* <div className="road_dots">
+      </div> */}
+
+      {/* <div className="road_lines">
+      </div> */}
     </div>
   );
 };

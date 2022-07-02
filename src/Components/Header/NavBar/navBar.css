@@ -4,6 +4,13 @@
   margin: 0 0 0.5rem 0;
 }
 
+.close {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  left: 4rem;
+  top: -2rem;
+}
 .nav_bar {
   display: flex;
   color: #f8f9fedb;
@@ -56,7 +63,9 @@
 .nav_button:hover {
   transform: scale(1.05);
 }
-
+.mobile_div {
+  display: none;
+}
 @media screen and (max-width: 1100px) {
   .logo {
     width: 8rem;
@@ -80,6 +89,27 @@
   .nav_links {
     display: none;
   }
+  .nav_close {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0 0 4.75rem 0;
+    width: 15rem;
+    background-color: white;
+    height: 100%;
+    z-index: 2;
+    color: black;
+  }
+
+  .mobile_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+
   .nav_burger {
     display: flex;
     width: 2.75rem;
@@ -90,7 +120,7 @@
     align-items: center;
     position: relative;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
   }
   .nav_list {
     width: 1.25rem;
@@ -102,12 +132,39 @@
     position: relative;
     z-index: 5;
   }
-  .nav_mobile_drop {
-    position: absolute;
-    width: 100%;
-    height: 20rem;
+}
+
+@media screen and (max-width: 450px) {
+  .nav_burger {
+    width: 2rem;
+    height: 2rem;
+  }
+  .nav_list {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .nav_bar {
+    height: 10vh;
+  }
+  .nav_close {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0 0 4.75rem 0;
+    width: 10rem;
     background-color: white;
-    top: -20rem;
-    left: 0;
+    height: 100%;
+    z-index: 2;
+    color: black;
+  }
+
+  .close {
+    width: 1.25rem;
+    height: 1.25rem;
+    position: relative;
+    left: 2rem;
+    top: -2rem;
   }
 }

@@ -9,9 +9,11 @@ import "./getData.css";
 const GetCard = ({ img, head, para }) => {
   return (
     <div className="get_card_container">
-      <img className="get_img" src={img} alt="" />
-      <p className="get_card_head">{head}</p>
-      <p className="get_card_para">{para}</p>
+      <div className="get_inner">
+        <img className="get_img" src={img} alt="" />
+        <p className="get_card_head">{head}</p>
+        <p className="get_card_para">{para}</p>
+      </div>
       <p className="get_card_link">
         Learn More <div className="tri"></div>{" "}
       </p>

@@ -1,10 +1,10 @@
 import React from "react";
 import "./cardP.css";
-const CardP = ({ img, heading, description }) => {
+const CardP = ({ img, heading, description, Classes }) => {
   return (
-    <div className="cardd">
+    <div className={"cardd " + Classes}>
       <div className="card-headerr">
-        <img src={img} alt={img} />
+        <img className="cardd_img" src={img} alt={img} />
         {heading}
       </div>
       <div className="cardd-body">

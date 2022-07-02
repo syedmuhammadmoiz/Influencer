@@ -25,6 +25,7 @@ const Solution = () => {
             ]}
           />
           <CardP
+            Classes="margins_l"
             img={B2c}
             heading={
               <div>
@@ -42,6 +43,7 @@ const Solution = () => {
             ]}
           />
           <CardP
+            Classes="margins_l"
             img={B2b}
             heading={
               <div>

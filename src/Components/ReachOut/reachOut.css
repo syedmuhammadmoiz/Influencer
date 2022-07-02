@@ -8,10 +8,10 @@
 }
 
 .card_container {
-  width: 15rem;
+  width: 20rem;
   height: 28rem;
   object-fit: cover;
-  flex: 0 0 20rem;
+
   margin: 0 1rem 0 1rem;
   transition: all 0.3s ease-in-out;
 }
@@ -73,15 +73,144 @@
 
 @media screen and (max-width: 1260px) {
   .reach_text {
-    margin: 5rem 0 0 0;
+    margin: -10rem 0;
   }
+
   .reach_card {
-    margin: -7rem 0 0 0;
+    margin: -12rem 0 0 0;
+  }
+
+  .card_container {
+    width: 19rem;
+    height: 23rem;
+    margin: 3rem 0 0 2rem;
+  }
+
+  .card_container .card_img {
+    left: 5rem;
+    top: 12.5rem;
+    width: 9.75rem;
+    height: 10rem;
+  }
+
+  .card_container .card_p {
+    font-size: 0.8rem;
+  }
+
+  .card_container .card_head {
+    font-size: 0.95rem;
+    line-height: 4rem;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1187px) {
+  .reach_text {
+    margin: -12rem 0 -14rem 0;
+  }
+
+  .reach_card {
+    margin: -10rem 0 0 0;
+  }
+
+  .card_container {
+    width: 16rem;
+    height: 20rem;
+    margin: 3rem 0 0 1rem;
+  }
+
+  .card_container .card_img {
+    left: 4rem;
+    top: 10.5rem;
+    width: 7.75rem;
+    height: 8rem;
+  }
+
+  .card_container .card_p {
+    font-size: 0.65rem;
+    line-height: 1.7rem;
+  }
+
+  .card_container .card_head {
+    font-size: 0.8rem;
+    line-height: 2.75rem;
+    margin-top: 3rem;
+  }
+}
+
+/* @media screen and (max-width: 1017px) {
+  .reach_card {
+    margin: -15rem 0 0 0;
+  }
+  .card_container {
+    margin-top: 7rem;
+  }
+} */
+
+@media screen and (max-width: 959px) {
+  .reach_text h1 {
+    font-size: 1.75rem;
+  }
+  .reach_container {
+    margin-top: 12rem;
+  }
+
+  .reach_card {
+    margin-top: 2rem;
+  }
+  .card_container {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .reach_text {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
   .reach_text h1 {
     font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .card_container {
+    margin: 3rem 0 0 0rem;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .reach_text h1 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .card_container {
+    width: 12rem;
+    height: 17rem;
+    margin: 1.75rem 0 0 0rem;
+  }
+
+  .card_container .card_img {
+    left: 3rem;
+    top: 7.75rem;
+    width: 5.75rem;
+    height: 6rem;
+  }
+
+  .card_container .card_p {
+    font-size: 0.5rem;
+    line-height: 1rem;
+  }
+
+  .card_container .card_head {
+    font-size: 0.7rem;
+    line-height: 2rem;
+    margin-top: 5rem;
+  }
+  .reach_text h1 {
+    font-size: 1.25rem;
+    padding-bottom: 7rem;
   }
 }
